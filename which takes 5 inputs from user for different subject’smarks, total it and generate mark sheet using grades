@@ -1,0 +1,23 @@
+print("Marks of subjects:")
+math=int(input("Enter Mathn Marks:\n"))
+p_st=int(input("Enter Pak Studies Marks:\n"))
+urdu=int(input("Enter urdu Marks:\n"))
+eng=int(input("Enter English Marks:\n"))
+bio=int(input("Enter Biology Marks:\n"))
+total=math+p_st+urdu+eng+bio
+percntage=total*100/500
+print("Total Marks of All Subjects out of 500:\n",total)
+if(percntage>=90 and percntage<=100):
+    print("Garde A+")
+elif(percntage>=80 and percntage<=89):
+    print("Garde A")
+elif(percntage>=70 and percntage<=79):
+    print("Garde B")
+elif(percntage>=60 and percntage<=69):
+    print("Garde C")
+elif(percntage>=50 and percntage<=59):
+    print("Garde D")
+elif(percntage>=0 and percntage<=49):
+    print("Garde Fail")
+else:
+    print("Invalid Percentage:\n Please enter valid marks")
